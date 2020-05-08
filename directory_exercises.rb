@@ -35,5 +35,5 @@ end
 students = input_students
 #nothing happens until we call the methods
 print_header
-print(students)
+print(students).select { |word| word.start_with?('b') }
 print_footer(students)
